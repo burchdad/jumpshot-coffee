@@ -1,3 +1,81 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Monthly Subscriptions | Jumpshot Coffee</title><meta name="description" content="Choose your Jumpshot Coffee monthly subscription. Small $100, medium $125, large $150. Located in Tyler, Texas."><link rel="stylesheet" href="styles.css"></head>
-<body><main class="flyer"><section class="brand"><img src="brand.svg" width="828" height="816" alt="Jumpshot Coffee — coffee cup and red roses"><p class="eyebrow">YOUR COFFEE. YOUR SIZE. YOUR ROUTINE.</p><h1>Make it<br><em>a Jumpshot.</em></h1><p class="tagline">Choose your monthly coffee subscription.</p></section><section class="signup" aria-labelledby="plan-title"><p class="eyebrow">MONTHLY COFFEE SUBSCRIPTIONS</p><h2 id="plan-title">Pick your pour.</h2><p class="intro">Three sizes. One easy choice.</p><fieldset><legend class="sr-only">Choose your subscription size</legend><label class="plan"><input type="radio" name="plan" value="small"><span class="size">Small</span><span class="price">$100<small>/month</small></span><span class="marker" aria-hidden="true"></span></label><label class="plan"><input type="radio" name="plan" value="medium"><span class="size">Medium</span><span class="price">$125<small>/month</small></span><span class="marker" aria-hidden="true"></span></label><label class="plan"><input type="radio" name="plan" value="large" checked><span class="size">Large</span><span class="price">$150<small>/month</small></span><span class="marker" aria-hidden="true"></span></label></fieldset><p class="extras">Add-ons and extras are priced separately.</p><div class="selection" aria-live="polite"><span id="selected-size">Large subscription</span><strong id="selected-price">$150/month</strong></div><a id="signup-button" class="button" href="tel:+19033523443">Call to sign up <span aria-hidden="true">↗</span></a><p id="signup-help" class="help">Ask our team about included drinks, redemption limits, and subscription terms.</p><footer><a class="phone" href="tel:+19033523443">(903) 352-3443</a><a class="address" href="https://www.google.com/maps/search/?api=1&amp;query=734+S+Fleishel+Ave+Tyler+TX+75701" target="_blank" rel="noopener">734 S Fleishel Ave · Tyler, TX 75701 <span aria-hidden="true">↗</span></a></footer></section></main><script src="config.js"></script><script src="signup.js"></script></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11130f">
+    <title>Monthly Subscriptions | Jumpshot Coffee</title>
+    <meta name="description" content="Pick your Jumpshot Coffee monthly subscription: small $100, medium $125, or large $150. Call our Tyler, Texas team to sign up.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="config.js" defer></script>
+    <script src="signup.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#plan-title">Choose your subscription</a>
+    <main class="flyer">
+      <section class="brand" aria-labelledby="brand-title">
+        <p class="location">Tyler, Texas</p>
+        <img class="brand-logo" src="brand.svg" width="828" height="816" alt="Jumpshot Coffee — coffee cup and red roses">
+        <div class="brand-copy">
+          <p class="eyebrow">Your coffee. Your size. Your routine.</p>
+          <h1 id="brand-title">Make it <em>a Jumpshot.</em></h1>
+          <p class="tagline">A little more Jumpshot in your month.</p>
+        </div>
+        <p class="brand-footer">Monthly coffee subscriptions</p>
+      </section>
+      <section class="signup" aria-labelledby="plan-title">
+        <header>
+          <p class="eyebrow step"><span aria-hidden="true">01</span> Choose your size</p>
+          <h2 id="plan-title" tabindex="-1">Pick your pour.</h2>
+          <p id="signup-intro" class="intro">Choose a size, then call our team to sign up.</p>
+        </header>
+        <fieldset aria-describedby="extras">
+          <legend class="sr-only">Choose your monthly subscription size</legend>
+          <label class="plan">
+            <input type="radio" name="plan" value="small">
+            <span class="marker" aria-hidden="true"></span>
+            <span class="size">Small</span>
+            <span class="price">$100<small>/ month</small></span>
+          </label>
+          <label class="plan">
+            <input type="radio" name="plan" value="medium">
+            <span class="marker" aria-hidden="true"></span>
+            <span class="size">Medium</span>
+            <span class="price">$125<small>/ month</small></span>
+          </label>
+          <label class="plan">
+            <input type="radio" name="plan" value="large" checked>
+            <span class="marker" aria-hidden="true"></span>
+            <span class="size">Large</span>
+            <span class="price">$150<small>/ month</small></span>
+          </label>
+        </fieldset>
+        <p id="extras" class="extras">Add-ons and extras are priced separately.</p>
+        <div class="next-step">
+          <p class="eyebrow step"><span aria-hidden="true">02</span> <span id="next-step-title">Sign up by phone</span></p>
+          <div class="selection" role="status" aria-live="polite" aria-atomic="true">
+            <span id="selected-size">Large subscription</span>
+            <strong id="selected-price">$150/month</strong>
+          </div>
+          <a id="signup-button" class="button" href="tel:+19033523443" aria-describedby="signup-help">
+            <span id="signup-label">Call to sign up</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <p id="signup-help" class="help">Call our team to confirm included drinks, redemption limits, and renewal and cancellation terms before signing up.</p>
+          <p class="selection-note">Choosing a size here does not start a subscription.</p>
+        </div>
+        <footer class="shop-details">
+          <div>
+            <span class="detail-label">Questions? Call Jumpshot</span>
+            <a class="phone" href="tel:+19033523443">(903) 352-3443</a>
+          </div>
+          <a class="address" href="https://www.google.com/maps/search/?api=1&amp;query=734+S+Fleishel+Ave+Tyler+TX+75701" target="_blank" rel="noopener noreferrer">
+            <span class="detail-label">Find us in Tyler</span>
+            <span>734 S Fleishel Ave<br>Tyler, TX 75701</span>
+            <span class="directions">Get directions <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg><span class="sr-only"> (opens in a new tab)</span></span>
+          </a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
