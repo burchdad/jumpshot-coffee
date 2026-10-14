@@ -26,3 +26,18 @@ Serve this repository as a static site. No build or dependencies are required. F
 For local viewing: `python -m http.server 8080` from this directory.
 
 The supplied logo is preserved within `brand.svg` as an embedded PNG. No WHS credentials, database connection, volunteer information, or payment settings are included.
+
+## Review and verification
+
+The page now separates choosing a size from the phone signup step. Choosing a radio option does not enroll a customer. Existing prices, the supplied logo, phone/address, and unconfigured checkout links are preserved. Phone signup stays available without JavaScript. When approved checkout URLs are configured, the heading, button, and supporting copy switch together for the selected plan. Returning from checkout resynchronizes any browser-restored selection.
+
+Run the dependency-free checks with Node.js 18 or newer:
+
+```
+node --check signup.js
+node --test tests/*.test.cjs
+```
+
+These checks cover prices, repeated selection, mixed configured/unconfigured plans, invalid URL fallback, browser-restored selection, and static fallback markup. They do not submit a signup, prove payment completion, or replace visual browser checks.
+
+For UI review, check 320px, 375px, and 390px mobile widths, a desktop width, keyboard selection and focus, 200% zoom, and the call/directions destinations. Do not place test calls, create subscriptions, or submit payment information as part of layout testing.
